@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+* {
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+}
+
+.navbar-content {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  gap: 10px;
+}
+.topics ul li:hover {
+  color: #fb2c36;
+  cursor: pointer;
+}
+
+.header-content {
+  width: 80%;
+  padding: 2.5rem;
+}
