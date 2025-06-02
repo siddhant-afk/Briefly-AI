@@ -41,8 +41,36 @@
 }
 
 .content-source-info img {
-  height: 30px;
-  width: 30px;
+  height: 25px;
+  width: 25px;
   object-fit: cover;
   border-radius: 50%;
+}
+
+.news-section {
+  margin-top: 4%;
+}
+
+.news-section-heading {
+  margin-left: 10%;
+}
+.news-container {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.news-card {
+  /* border: solid 1px black; */
+  height: 400px;
+  width: 290px;
+}
+
+.news-card img {
+  height: 50%;
+  object-fit: cover;
+}
+
+.news-heading {
+  font-family: Georgia, "Times New Roman", Times, serif;
 }

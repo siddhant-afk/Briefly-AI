@@ -10,7 +10,7 @@ const MainFeature = () => {
           <img src={Image} alt="" className="rounded-lg" />
         </div>
         <div className="main-feature-content flex-[1]">
-          <div className="content-source-info flex gap-2 items-center mt-3">
+          <div className="content-source-info flex gap-1 items-center mt-3 tracking-tighter">
             <div className="flex gap-3 items-center">
               <img src={SourceImg} alt="" />
               <span className="text-zinc-600">Netflix</span>
@@ -27,7 +27,7 @@ const MainFeature = () => {
             necessitatibus ipsam, tenetur quod, iure est perferendis, culpa
             sapiente deleniti maxime ad!
           </p>
-          <div className="flex gap-3 items-center mt-5">
+          <div className="flex gap-2 items-center mt-5">
             <span className="text-red-600">Entertainment</span>{" "}
             <span className="text-zinc-400">&bull;</span>
             <span className="text-zinc-600">4 min read</span>
