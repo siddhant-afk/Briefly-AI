@@ -20,3 +20,29 @@
   width: 80%;
   padding: 2.5rem;
 }
+
+.main-feature {
+  width: 80%;
+  margin-top: 5%;
+}
+
+.feature-img-container img {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.main-feature-content {
+  padding-left: 2.5rem;
+}
+
+.main-feature-content h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.content-source-info img {
+  height: 30px;
+  width: 30px;
+  object-fit: cover;
+  border-radius: 50%;
+}
