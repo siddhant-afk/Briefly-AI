@@ -1,6 +1,4 @@
 import React from "react";
-import Image from "../assets/feature-story.jpg";
-import SourceImg from "../assets/Netflix-icon.png";
 
 const MainFeature = ({
   title,
