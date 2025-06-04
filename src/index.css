@@ -66,8 +66,13 @@
   width: 290px;
 }
 
-.news-card img {
-  height: 50%;
+.img-container {
+  height: 180px;
+}
+
+.img-container img {
+  height: 180px;
+  /* width: 100%; */
   object-fit: cover;
 }
 

@@ -1,6 +1,8 @@
 import Logo from "../assets/logo.png";
 import TopicBar from "./TopicBar";
 
+import { Link } from "react-router-dom";
+
 function Navbar() {
   return (
     <nav className="flex items-center justify-center  navbar">
