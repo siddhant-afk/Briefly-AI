@@ -1,3 +1,5 @@
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 import fallbackImg from "../assets/fallback.png";
 
 const NewsCard = ({
@@ -14,15 +16,21 @@ const NewsCard = ({
   return (
     <div className="news-card flex flex-col mt-10">
       <div className="img-container">
-        <img
+        <LazyLoadImage
           src={image || fallbackImg}
           alt=""
           className="rounded-xl w-full h-full "
+          effect="blur"
         />
       </div>
       <div className="flex gap-1 items-center mt-4 tracking-tighter">
         <div className="flex gap-2 items-center">
-          <img src={source_icon} alt="" className="w-5 rounded-full" />
+          <LazyLoadImage
+            src={source_icon}
+            alt=""
+            className="w-5 rounded-full"
+            effect="blur"
+          />
           <span className="text-zinc-600 text-sm">
             <a href={source_url} target="_blank">
               {source}
@@ -33,7 +41,11 @@ const NewsCard = ({
         <span className="text-zinc-600  text-sm">{time}</span>
       </div>
       <h1 className="text-xl font-bold  leading-[1.2] mt-3">
-        <a href={url} target="_blank" className=" news-heading">
+        <a
+          href={url}
+          target="_blank"
+          className=" news-heading hover:text-red-600 hover:underline"
+        >
           {title.slice(0, 45)}...
         </a>
       </h1>

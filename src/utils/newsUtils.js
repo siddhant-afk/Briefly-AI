@@ -1,13 +1,15 @@
 export async function fetchNews(NEWS_URL) {
-  try {
-    const response = await fetch(NEWS_URL);
-    const data = await response.json();
-    const results = data.results;
+  const response = await fetch(NEWS_URL);
 
-    return results;
-  } catch (error) {
-    console.log(`An error occured : ${error}`);
+  if (!response.ok) {
+    throw new Error("Falied to fetch news");
   }
+
+  const data = await response.json();
+
+  const results = data.results;
+
+  return results;
 }
 
 export function timeAgo(dateString) {

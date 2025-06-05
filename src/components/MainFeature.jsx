@@ -1,4 +1,6 @@
 import fallbackImg from "../assets/fallback.png";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 const MainFeature = ({
   title,
@@ -15,12 +17,17 @@ const MainFeature = ({
     <section className="main-feature-container flex justify-center">
       <div className="main-feature flex">
         <div className="feature-img-container flex-[1]">
-          <img src={image || fallbackImg} alt="" className="rounded-lg" />
+          <LazyLoadImage
+            src={image || fallbackImg}
+            alt=""
+            className="rounded-lg"
+            effect="blur"
+          />
         </div>
         <div className="main-feature-content flex-[1]">
           <div className="content-source-info flex gap-1 items-center mt-3 tracking-tighter">
             <div className="flex gap-3 items-center">
-              <img src={source_icon} alt="" />
+              <LazyLoadImage src={source_icon} alt="" effect="blur" />
               <span className="text-zinc-600">
                 <a href={source_url} target="_blank">
                   {source}
@@ -31,7 +38,11 @@ const MainFeature = ({
             <span className="text-zinc-600">{time}</span>
           </div>
           <h1 className="text-4xl font-bold  leading-[1.2] mt-3">
-            <a href={url} target="_blank" className="news-heading">
+            <a
+              href={url}
+              target="_blank"
+              className="news-heading hover:text-red-600 hover:underline"
+            >
               {title.slice(0, 50)}...
             </a>
           </h1>
