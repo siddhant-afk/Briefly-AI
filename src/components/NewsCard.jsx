@@ -1,5 +1,4 @@
-import Image from "../assets/feature-story.jpg";
-import SourceImg from "../assets/Netflix-icon.png";
+import fallbackImg from "../assets/fallback.png";
 
 const NewsCard = ({
   title,
@@ -15,7 +14,11 @@ const NewsCard = ({
   return (
     <div className="news-card flex flex-col mt-10">
       <div className="img-container">
-        <img src={image} alt="" className="rounded-xl w-full h-full " />
+        <img
+          src={image || fallbackImg}
+          alt=""
+          className="rounded-xl w-full h-full "
+        />
       </div>
       <div className="flex gap-1 items-center mt-4 tracking-tighter">
         <div className="flex gap-2 items-center">

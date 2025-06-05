@@ -1,4 +1,4 @@
-import React from "react";
+import fallbackImg from "../assets/fallback.png";
 
 const MainFeature = ({
   title,
@@ -15,7 +15,7 @@ const MainFeature = ({
     <section className="main-feature-container flex justify-center">
       <div className="main-feature flex">
         <div className="feature-img-container flex-[1]">
-          <img src={image} alt="" className="rounded-lg" />
+          <img src={image || fallbackImg} alt="" className="rounded-lg" />
         </div>
         <div className="main-feature-content flex-[1]">
           <div className="content-source-info flex gap-1 items-center mt-3 tracking-tighter">
