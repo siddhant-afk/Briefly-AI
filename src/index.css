@@ -120,7 +120,7 @@
   .topics.open {
     display: block;
     position: absolute;
-    top: 15%;
+    top: 10%;
     left: 0;
     padding-left: 11%;
     background-color: #fff;
