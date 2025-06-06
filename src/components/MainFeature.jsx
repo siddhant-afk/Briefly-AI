@@ -41,13 +41,13 @@ const MainFeature = ({
             <a
               href={url}
               target="_blank"
-              className="news-heading hover:text-red-600 hover:underline"
+              className="news-heading hover:text-red-600 hover:underline multi-line-truncate"
             >
-              {title.slice(0, 50)}...
+              {title}
             </a>
           </h1>
-          <p className="mt-3 text-zinc-700">
-            {description && description.slice(0, 200)}...
+          <p className="mt-3 text-zinc-700 multi-line-truncate">
+            {description}
           </p>
           <div className="flex gap-2 items-center mt-3">
             <span className="text-red-600">

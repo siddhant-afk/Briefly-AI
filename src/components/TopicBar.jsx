@@ -1,9 +1,11 @@
 import { NavLink } from "react-router-dom";
 
-function TopicBar() {
+function TopicBar({ isOpen }) {
   return (
-    <section className="topics flex justify-center mt-2">
-      <ul className="flex gap-12 justify-center p-2   ">
+    <section
+      className={`topics flex justify-center mt-2 ${isOpen ? "open" : ""}`}
+    >
+      <ul className={` nav-links flex gap-12 justify-center p-2    `}>
         <li>
           <NavLink
             to="/"

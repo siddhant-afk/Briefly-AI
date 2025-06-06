@@ -19,7 +19,7 @@ const NewsCard = ({
         <LazyLoadImage
           src={image || fallbackImg}
           alt=""
-          className="rounded-xl w-full h-full "
+          className="rounded-xl w-full h-full news-img"
           effect="blur"
         />
       </div>
@@ -44,14 +44,12 @@ const NewsCard = ({
         <a
           href={url}
           target="_blank"
-          className=" news-heading hover:text-red-600 hover:underline"
+          className=" news-heading hover:text-red-600 hover:underline multi-line-truncate"
         >
-          {title.slice(0, 45)}...
+          {title}
         </a>
       </h1>
-      <p className="mt-3 text-zinc-700 ">
-        {description && description.slice(0, 100)}...
-      </p>
+      <p className="mt-3 text-zinc-700 multi-line-truncate ">{description}</p>
       <div className="flex gap-1 items-center mt-3 text-sm">
         <span className="text-red-600">
           {category.charAt(0).toUpperCase() + category.slice(1).toLowerCase()}
